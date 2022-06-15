@@ -19,5 +19,7 @@ Imports:
     shinydashboard,
     tidyr,
     visNetwork
-Remotes:  
+Remotes: 
     IOR-Bioinformatics/PCSF
+URL: https://github.com/LogLew12/shinyenrich
+BugReports: https://github.com/LogLew12/shinyenrich/issues
