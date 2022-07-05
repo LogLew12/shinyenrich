@@ -13,13 +13,15 @@ Imports:
     dplyr,
     DT,
     igraph,
+    leapR (>= 0.0.0.9000),
     PCSF (>= 0.99.1),
     shiny,
     shinycssloaders,
     shinydashboard,
     tidyr,
     visNetwork
-Remotes: 
-    IOR-Bioinformatics/PCSF
+Remotes:  
+    IOR-Bioinformatics/PCSF,
+    biodataganache/leapR
 URL: https://github.com/LogLew12/shinyenrich
 BugReports: https://github.com/LogLew12/shinyenrich/issues
