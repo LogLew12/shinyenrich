@@ -1,13 +1,17 @@
-library(dplyr)
+library(readr)
+#This is the package file
+
 
 make_mapping_db <- function(species) {
-mapping_file <- paste0("/Users/lewi052/MAP/STRINGdb_exploration/STRINGdb_cache/", species, ".protein.aliases.v11.5.txt.gz")
+# mapping_file <- paste0("/Users/lewi052/MAP/Prototype_app/STRING_db/", species, ".protein.aliases.v11.5.txt.gz")
+mapping_file <- paste0("assests:/i_data/", species, ".protein.aliases.v11.5.txt.gz")
 mapping_db <- read.csv(mapping_file, sep = "\t")
 return(mapping_db)
 }
 
 make_inters_db <- function(species) {
-inters_file <- paste0("/Users/lewi052/MAP/STRINGdb_exploration/STRINGdb_cache/", species, ".protein.links.v11.5.txt.gz")
+# inters_file <- paste0("/Users/lewi052/MAP/Prototype_app/STRING_db/", species, ".protein.links.v11.5.txt.gz")
+inters_file <- paste0("assests:/i_data/", species, ".protein.links.v11.5.txt.gz")
 inters_db <- read.table(inters_file, header = T)
 return(inters_db)
 }
